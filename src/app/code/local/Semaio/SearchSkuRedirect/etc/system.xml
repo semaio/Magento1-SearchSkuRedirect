@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Semaio_SearchSkuRedirect module.
+ *
+ * See LICENSE.md bundled with this module for license details.
+ *
+ * @category  Semaio
+ * @package   Semaio_SearchSkuRedirect
+ * @author    semaio GmbH <hello@semaio.com>
+ * @copyright 2016 semaio GmbH (http://www.semaio.com)
+ */
+-->
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <search>
+                    <fields>
+                        <search_sku_redirect translate="label comment" module="semaio_searchskuredirect">
+                            <label>Enable SKU search redirect</label>
+                            <comment>Check if the search query is an enabled and visible Magento in product. If yes, the customer is redirected to the found product.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1000</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </search_sku_redirect>
+                        <search_sku_redirect_check_parent_product translate="label comment" module="semaio_searchskuredirect">
+                            <label>Check for parent products</label>
+                            <comment>If the found product is a simple product and set to "Individually not visible", check if there is an enabled and visible parent product (grouped/configurable product). If yes, the customer is redirected to the first found parent product.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1001</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <search_sku_redirect>1</search_sku_redirect>
+                            </depends>
+                        </search_sku_redirect_check_parent_product>
+                    </fields>
+                </search>
+            </groups>
+        </catalog>
+    </sections>
+</config>

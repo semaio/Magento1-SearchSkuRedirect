@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Semaio_SearchSkuRedirect module.
+ *
+ * See LICENSE.md bundled with this module for license details.
+ *
+ * @category  Semaio
+ * @package   Semaio_SearchSkuRedirect
+ * @author    semaio GmbH <hello@semaio.com>
+ * @copyright 2016 semaio GmbH (http://www.semaio.com)
+ */
+-->
+<config>
+    <modules>
+        <Semaio_SearchSkuRedirect>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_CatalogSearch/>
+            </depends>
+        </Semaio_SearchSkuRedirect>
+    </modules>
+</config>

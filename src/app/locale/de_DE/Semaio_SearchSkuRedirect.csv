@@ -1,0 +1,4 @@
+"Enable SKU search redirect","SKU-Such-Weiterleitung aktivieren"
+"Check for parent products","Auf Elternprodukte prüfen"
+"Check if the search query is an enabled and visible Magento in product. If yes, the customer is redirected to the found product.","Prüfe, ob die Suchanfrage ein aktiviertes und sichtbares Produkt in magento ist. Falls ja, wird der Kunde zu dem gefundenen Produkt weitergeleitet."
+"If the found product is a simple product and set to ""Individually not visible"", check if there is an enabled and visible parent product (grouped/configurable product). If yes, the customer is redirected to the first found parent product.","Wenn das gefundene Produkt ein einfacher Artikel ist, der auf ""Einzeln nicht sichtbar"" steht, prüfe ob es ein dazugehöriges Elternprodukt (Gruppierter/Konfigurierbarer Artikel) gefunden werden kann. Falls ja, wird der Kunde zum ersten gefundenen Elternprodukt weitergeleitet."

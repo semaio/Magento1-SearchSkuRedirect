@@ -1,0 +1,2 @@
+config:
+  default/catalog/search/search_sku_redirect: 1
