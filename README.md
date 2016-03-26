@@ -8,6 +8,10 @@ Build Status
 * Latest Release: [![Master Branch](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect.svg?branch=master)](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect)
 * Development Branch: [![Develop Branch](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect.svg?branch=develop)](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect)
 
+Facts
+-----
+* Version: 1.0.0
+
 Functionality
 -------------
 
