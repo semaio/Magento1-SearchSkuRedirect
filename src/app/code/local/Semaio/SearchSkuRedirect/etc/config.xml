@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Semaio_SearchSkuRedirect module.
+ *
+ * See LICENSE.md bundled with this module for license details.
+ *
+ * @category  Semaio
+ * @package   Semaio_SearchSkuRedirect
+ * @author    semaio GmbH <hello@semaio.com>
+ * @copyright 2016 semaio GmbH (http://www.semaio.com)
+ */
+-->
+<config>
+    <modules>
+        <Semaio_SearchSkuRedirect>
+            <version>1.0.0</version>
+        </Semaio_SearchSkuRedirect>
+    </modules>
+    <global>
+        <blocks>
+            <semaio_searchskuredirect>
+                <class>Semaio_SearchSkuRedirect_Block</class>
+            </semaio_searchskuredirect>
+        </blocks>
+        <helpers>
+            <semaio_searchskuredirect>
+                <class>Semaio_SearchSkuRedirect_Helper</class>
+            </semaio_searchskuredirect>
+        </helpers>
+        <models>
+            <semaio_searchskuredirect>
+                <class>Semaio_SearchSkuRedirect_Model</class>
+            </semaio_searchskuredirect>
+        </models>
+    </global>
+    <adminhtml>
+        <translate>
+            <modules>
+                <semaio_searchskuredirect>
+                    <files>
+                        <default>Semaio_SearchSkuRedirect.csv</default>
+                    </files>
+                </semaio_searchskuredirect>
+            </modules>
+        </translate>
+    </adminhtml>
+    <frontend>
+        <events>
+            <controller_action_predispatch_catalogsearch_result_index>
+                <observers>
+                    <semaio_searchskuredirect>
+                        <class>semaio_searchskuredirect/observer_redirect</class>
+                        <method>execute</method>
+                    </semaio_searchskuredirect>
+                </observers>
+            </controller_action_predispatch_catalogsearch_result_index>
+        </events>
+    </frontend>
+    <default>
+        <catalog>
+            <search>
+                <search_sku_redirect>0</search_sku_redirect>
+                <search_sku_redirect_check_parent_product>0</search_sku_redirect_check_parent_product>
+            </search>
+        </catalog>
+    </default>
+    <phpunit>
+        <suite>
+            <modules>
+                <Semaio_SearchSkuRedirect/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

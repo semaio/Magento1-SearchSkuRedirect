@@ -1,0 +1,2 @@
+config:
+  default/catalog/search/search_sku_redirect_check_parent_product: 1

@@ -1,0 +1,5 @@
+module:
+  version: 1.0.0
+  code_pool: local
+  depends:
+    - Mage_CatalogSearch

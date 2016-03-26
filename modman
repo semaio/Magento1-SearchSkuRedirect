@@ -1,0 +1,3 @@
+src/app/code/local/Semaio/SearchSkuRedirect     app/code/local/Semaio/SearchSkuRedirect
+src/app/etc/modules/*                           app/etc/modules/
+src/app/locale/de_DE/*.csv                      app/locale/de_DE/

@@ -1,0 +1,16 @@
+{
+  "name": "semaio/magento1-searchskuredirect",
+  "description": "Redirect a SKU search in Magento to the corresponding product.",
+  "license": "OSL-3.0",
+  "type": "magento-module",
+  "homepage": "https://github.com/semaio/Magento1-SearchSkuRedirect",
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Rouven Alexander Rieker",
+      "email": "therouv@googlemail.com"
+    }
+  ]
+}
