@@ -3,6 +3,11 @@ Semaio_SearchSkuRedirect
 
 Redirect a SKU search in Magento to the corresponding product.
 
+Build Status
+------------
+* Latest Release: [![Master Branch](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect.svg?branch=master)](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect)
+* Development Branch: [![Develop Branch](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect.svg?branch=develop)](https://travis-ci.org/semaio/Magento1-SearchSkuRedirect)
+
 Functionality
 -------------
 
